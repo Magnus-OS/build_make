@@ -825,7 +825,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   # Build info
   script.Print("×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×");
   script.Print("                                               ");
-  script.Print("                 MAGNUS OS - 1.1               ");
+  script.Print("                   MAGNUS OS                   ");
   script.Print("                   BY ReveRTX                  ");
   script.Print("                                               ");
   script.Print("×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×");
@@ -835,7 +835,6 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   securep = target_info.GetBuildProp("ro.build.version.security_patch")
   device = target_info.GetBuildProp("ro.product.name")
   manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
-  script.Print("×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×");
   script.Print(" Android version  : %s"%(androidver));
   script.Print(" Security patch   : %s"%(securep));
   script.Print(" Build date       : %s"%(buildday));
@@ -844,7 +843,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print(" Manufacturer     : %s"%(manufacturer));
   script.Print("×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×");
   script.Print("                                               ");
-  
+
   device_specific.FullOTA_InstallBegin()
 
   CopyInstallTools(output_zip)
